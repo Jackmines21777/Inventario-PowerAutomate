@@ -9,23 +9,43 @@
 }
 
 body {
-    height: 100%;
     background-color: #ECF4F9;
 }
 
 section {
+    height: 100dvh;
     margin: auto;
     padding: var(--padding-x);
     width: min(100%, var(--max-width));
+
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'registrar dashboard qr';
+    grid-gap: 10px;     
+
 }
 
+.registrar { grid-area: registrar; }
+.dashboard { grid-area: dashboard; }
+.qr { grid-area: qr; }
+
+main {
+  display: flex;
+}
+
+iframe {
+  margin: auto;
+}
 
 
 
 
 
 .e-card {
-    margin: 100px auto;
+  margin: auto;
+    /* margin: 100px auto; */
     background: transparent;
     box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
     position: relative;
@@ -113,5 +133,17 @@ section {
   
     100% {
       transform: rotate(360deg);
+    }
+  }
+
+
+  @media (width < 1000px) {
+    section {
+
+      grid-template-rows: 3fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'registrar'
+                           'dashboard'
+                           'qr';
     }
   }
