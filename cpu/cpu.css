@@ -20,16 +20,18 @@ section {
 
 
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 'registrar dashboard qr';
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'Solo Movimiento'
+                        'Dashboard QR';
     grid-gap: 10px;     
 
 }
 
-.registrar { grid-area: registrar; }
-.dashboard { grid-area: dashboard; }
-.qr { grid-area: qr; }
+.Solo { grid-area: Solo; }
+.Movimiento { grid-area: Movimiento; }
+.Dashboard { grid-area: Dashboard; }
+.QR { grid-area: QR; }
 
 main {
   display: flex;
@@ -140,10 +142,11 @@ iframe {
   @media (width < 1000px) {
     section {
 
-      grid-template-rows: 3fr;
+      grid-template-rows: 4fr;
       grid-template-columns: 1fr;
-      grid-template-areas: 'registrar'
-                           'dashboard'
-                           'qr';
+      grid-template-areas: 'Solo'
+                           'Movimiento'
+                           'Dashboard'
+                           'QR';
     }
   }
