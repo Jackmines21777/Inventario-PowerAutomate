@@ -21,8 +21,8 @@ section {
 
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 'Movimiento Dashboard QR';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'Movimiento Dashboard DashboardMovimiento QR';
   grid-gap: 10px;     
 
 }

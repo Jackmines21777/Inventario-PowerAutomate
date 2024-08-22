@@ -20,10 +20,9 @@ section {
 
 
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'Solo Movimiento'
-                        'Dashboard QR';
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'Movimiento Dashboard DashboardMovimiento QR';
     grid-gap: 10px;     
 
 }
@@ -142,9 +141,9 @@ iframe {
   @media (width < 1000px) {
     section {
 
-      grid-template-rows: 4fr;
+      grid-template-rows: 3fr;
       grid-template-columns: 1fr;
-      grid-template-areas: 'Solo'
+      grid-template-areas: 
                            'Movimiento'
                            'Dashboard'
                            'QR';
