@@ -5,165 +5,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventario 2024</title>
-    
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="home.css">
-    
+    <script src="dark.js"></script>
+
     <script src="auth.js"></script>
 </head>
 
 <body>
 
-
-<section>
-    <div id="registrar" class="e-card playing registrar">
-        <a href="https://forms.office.com/r/8pgwybA0MS" target="_blank">
-            <div class="image"></div>
-
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
+    <div class="content">
 
 
-            <div class="infotop">
+        <main>
 
-                <i class='bx bx-plus-circle'></i><br>
-                Registrar equipo
-                <br>
-                <div class="name">CPU / Monitor / Teclado</div>
-            </div>
-        </a>
-    </div>
+            <nav class="nav__shortcuts">
+                <div class="shortcuts__agregar --fondo__nav">
+                    <a href="https://forms.office.com/r/8pgwybA0MS" target="_blank">
+                        <i class='bx bxs-plus-circle'></i><br>
+                    </a>
+                </div>
 
-    <div class="e-card playing Dashboard01">
-        <a href="https://app.powerbi.com/view?r=eyJrIjoiODliMTRjMjYtYmU1MC00MTZkLWEzMzEtN2YwMTk2ZGE1MDdjIiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9" target="_blank">
-            <div class="image"></div>
+                <div class="shortcuts__b --fondo__nav">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiODliMTRjMjYtYmU1MC00MTZkLWEzMzEtN2YwMTk2ZGE1MDdjIiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9"
+                        target="_blank">
+                        <i class='bx bxs-dashboard'></i>
 
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
+                    </a>
 
+                </div>
 
-            <div class="infotop">
+                <div class="shortcuts__c --fondo__nav">
+                    <a href="https://forms.office.com/r/6heT5TEbwd" target="_blank">
+                        <i class='bx bx-qr'></i>
 
-                <i class='bx bxs-dashboard' ></i>
-                <br>
-                Dashboard
-                <br>
-                <div class="name">General</div>
-            </div>
-        </a>
-    </div>
-    <div class="e-card playing Dashboard02">
-            <div class="image"></div>
+                    </a>
+                </div>
 
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
+                <div id="dark-mode-toggle"
+                 class="shortcuts__d --fondo__dark container ">
+                    <div id="box1" class="box" tabindex="0"><i class='bx bxs-moon'></i></div>
+                    <div id="box2" class="box hidden" tabindex="0"><i class='bx bxs-sun'></i></div>
+                </div>
 
 
-            <div class="infotop">
 
-                <i class='bx bxs-dashboard' ></i>
-                <br>
-                Dashboard
-                <br>
-                <div class="name">CPU / Monitor / Teclado / Impresora</div>
-            </div>
-    </div>
+            </nav>
 
-    <div class="e-card playing QR">
-        <a href="https://forms.office.com/r/euL5uRdwgG" target="_blank">
-            <div class="image"></div>
-
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-
-
-            <div class="infotop">
-                <i class='bx bx-qr'></i>
-                <br>
-                <div class="name">Generar QR</div>
-            </div>
-        </a>
-    </div>
-
-    <div class="e-card playing CPU">
-        <a href="../home/cpu/cpu.html">
-            <div class="image"></div>
-
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-
-
-            <div class="infotop">
-                <i class='bx bx-brain' ></i>
-                <br>
-                <div class="name">CPU</div>
-            </div>
-        </a>
-    </div>
-
-    <div class="e-card playing Monitor">
-        <a href="../home/monitor/monitor.html">
-
-            <div class="image"></div>
-
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-
-
-            <div class="infotop">
-                <i class='bx bx-desktop'></i>
-                <br>
-                <div class="name">Monitor</div>
-            </div>
-        </a>
-    </div>
-
-    <div class="e-card playing Teclado">
-        <a href="../home/teclado/teclado.html">
-
-            <div class="image"></div>
-
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-
-
-            <div class="infotop">
-                <i class='bx bxs-keyboard' ></i>
-                <br>
-                <div class="name">Teclado</div>
-            </div>
-        </a>
-    </div>
-
-    <div class="e-card playing Impresora">
-        <a href="../home/impresora/impresora.html">
-
-            <div class="image"></div>
-
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-
-
-            <div class="infotop">
-                <i class='bx bx-printer'></i>
-                <br>
-                <div class="name">Impresora</div>
-            </div>
-        </a>
-    </div>
-
-  
-
-</section>
+            <section class="nav__section"> 
+                <div class="section section__cpu">
+                    <div class="section__image">
+                        <img src="../src/img/cpu.webp" alt="">
+                    </div>
     
+                    <div class="section__options">
+                        <div class="options__agregar --fondo__section">
+                            <a href="" class="tooltip" data-text="Agregar" target="_blank">
+                                <i class='bx bxs-plus-circle'></i>
+                            </a>
+                        </div>
+    
+                        <div class="options__movimiento --fondo__section">
+                            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=NGymxLcrH0WL4bLCakMBWFzR78xJdcxJkrRTCS-HT7tUN05CNTU1T1A3M0MwUkM2OExXU0FEVU5HMS4u"
+                                class="tooltip" data-text="Realizar Movimiento" target="_blank">
+                                <i class='bx bx-move'></i>
+    
+                            </a>
+                        </div>
+    
+                        <div class="options__dashboardGeneral --fondo__section">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNWE5YjkwYmQtODliMC00OTU1LTk3NjUtNTk2NmMzNDIzMjA4IiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9"
+                                class="tooltip" data-text="Dashboard General" target="_blank">
+                                <i class='bx bxs-circle-three-quarter'></i>
+    
+                            </a>
+                        </div>
+                        <div class="options__dashboardMovimiento --fondo__section image-container">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNzE0NjU3YWUtNDQzNC00YjkzLWIxNTMtNDVkMjE3Y2ExNWFlIiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9"
+                                class="tooltip" data-text="Dashboard Movimientos" target="_blank">
+                                <i class='bx bxs-dashboard'></i>
+    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="section section__monitor">
+                    <div class="section__image">
+                        <img src="../src/img/monitor.png" alt="">
+                    </div>
+    
+                    <div class="section__options">
+                        <div class="options__agregar --fondo__section">
+                            <a href="" class="tooltip" data-text="Agregar">
+                                <i class='bx bxs-plus-circle'></i>
+                            </a>
+                        </div>
+    
+                        <div class="options__movimiento --fondo__section">
+                            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=NGymxLcrH0WL4bLCakMBWFzR78xJdcxJkrRTCS-HT7tUQVBCREFSRUJTRUVQMFVOU0pDQVhJNEdLVS4u"
+                                class="tooltip" data-text="Realizar Movimiento" target="_blank">
+                                <i class='bx bx-move'></i>
+    
+                            </a>
+                        </div>
+    
+                        <div class="options__dashboardGeneral --fondo__section">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiOGZlNzU4YTctZjE2ZS00YTNhLWIzOGUtYzViOTQ1MmYyZGJmIiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9"
+                                class="tooltip" data-text="Dashboard General" target="_blank">
+                                <i class='bx bxs-circle-three-quarter'></i>
+    
+                            </a>
+                        </div>
+                        <div class="options__dashboardMovimiento --fondo__section image-container">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiYjhhNDVlMzgtOTRlOC00NzIxLTg1ZmUtMmRjMTJhMTgwNjMwIiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9"
+                                class="tooltip" data-text="Dashboard Movimientos" target="_blank">
+                                <i class='bx bxs-dashboard'></i>
+    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="section section__teclado">
+                    <div class="section__image">
+                        <img src="../src/img/teclado.png" alt="">
+                    </div>
+    
+                    <div class="section__options">
+                        <div class="options__agregar --fondo__section">
+                            <a href="" class="tooltip" data-text="Agregar">
+                                <i class='bx bxs-plus-circle'></i>
+                            </a>
+                        </div>
+    
+                        <div class="options__movimiento --fondo__section">
+                            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=NGymxLcrH0WL4bLCakMBWFzR78xJdcxJkrRTCS-HT7tUMFpEV0VDMUFER1YzWEczMFM4SjBEUEExUy4u"
+                                class="tooltip" data-text="Realizar Movimiento" target="_blank">
+                                <i class='bx bx-move'></i>
+    
+                            </a>
+                        </div>
+    
+                        <div class="options__dashboardGeneral --fondo__section">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiOGExZWZmOGQtYmRhZi00NTA3LTkzOGYtY2ExNGUyYzU3ZTQ5IiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9"
+                                class="tooltip" data-text="Dashboard General" target="_blank">
+                                <i class='bx bxs-circle-three-quarter'></i>
+    
+                            </a>
+                        </div>
+                        <div class="options__dashboardMovimiento --fondo__section image-container">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNjhlMzY1NTItNzhmNS00NTNhLWJhYzctNjZkOWNkOGRmZDQ1IiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9"
+                                class="tooltip" data-text="Dashboard Movimientos">
+                                <i class='bx bxs-dashboard'></i>
+    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="section section__impresora">
+                    <div class="section__image">
+                        <img src="../src/img/impresora.png" alt="">
+                    </div>
+    
+                    <div class="section__options">
+                        <div class="options__agregar --fondo__section">
+                            <a href="" class="tooltip" data-text="Agregar">
+                                <i class='bx bxs-plus-circle'></i>
+                            </a>
+                        </div>
+    
+                        <div class="options__movimiento --fondo__section">
+                            <a href="" class="tooltip" data-text="Realizar Movimiento">
+                                <i class='bx bx-move'></i>
+    
+                            </a>
+                        </div>
+    
+                        <div class="options__dashboardGeneral --fondo__section">
+                            <a href="" class="tooltip" data-text="Dashboard General">
+                                <i class='bx bxs-circle-three-quarter'></i>
+    
+                            </a>
+                        </div>
+                        <div class="options__dashboardMovimiento --fondo__section image-container">
+                            <a href="" class="tooltip" data-text="Dashboard Movimientos">
+                                <i class='bx bxs-dashboard'></i>
+    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+        </main>
+
+    </div>
+
 
 
 
