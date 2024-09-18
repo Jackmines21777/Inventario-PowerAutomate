@@ -14,9 +14,9 @@
   --background__nav: #f06dff;
   --borde: #181818;
 
-  --negro__neto: #181818;
-  --blanco__neto: #ebffff;
-
+  --negro__dark: #181818;
+  --blanco__dark: #ebffff;
+  --blanco-rojo: #ebffff;
   --margin__section: 0 53px;
   /* --border-radious-section: 10%; */
 }
@@ -33,61 +33,35 @@
 
   --shadow: #ebffff;
   --background__nav: #f06dff;
-
-
+  --negro__dark: #ebffff;
+  --blanco-rojo: red;
 }
-
-
-.dark {
-  display: grid;
-  position: absolute;
-  padding: 20px;
-  border-radius: 50%;
-  background: red;
-
-    & i {
-      font-size: 40px;
-    }
-}
-
-.light {
-  display: grid;
-  position: absolute;
-  padding: 20px;
-  border-radius: 50%;
-  background: rgb(0, 8, 255);
-  transform: scale(0);
-    & i {
-      font-size: 40px;
-    }
-}
-
 
 body {
   /* background: #181818; */
   background: var(--background);
+  /* height: 100dvh; */
+
 }  
 
 
 .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100dvh;
-
-    & main {
-      width: min(100%, var(--max-width));
-      display: grid;
-      grid-template-columns: .2fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas:  
-                             'nav__shortcuts  nav__section';
-      grid-gap: 50px;
-    
-    }
+  /* margin: auto; */
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 
+main {
+  width: min(100%, var(--max-width));
+  display: grid;
+  grid-template-columns: .2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:  
+                         'nav__shortcuts  nav__section';
+  grid-gap: 50px;
 
+}
 
 
 .nav__shortcuts {
@@ -156,10 +130,9 @@ body {
           grid-template-columns: 1fr 1fr 1fr 1fr;
           grid-template-areas: 'options__agregar options__movimiento options__dashboardGeneral options__dashboardMovimiento';
           grid-gap: 20px;  
-
+          margin: var(--margin__section);
             & i:hover {
-                color: red;
-                scale: 2;
+                color: var(--blanco-rojo);
             }
       }
 }
@@ -200,7 +173,7 @@ body {
     }
 
     .--fondo__dark {
-      background: var(--negro);
+      background: var(--negro__dark);
       border: 10px solid #f6ff00;
       border-radius: 50%;
       filter: drop-shadow(2px 4px 1px  #43424269);
@@ -245,7 +218,7 @@ body {
         }
 
         & i:hover {
-          color: var(--background);
+          color: var(--blanco-rojo);
         }
       
     }
@@ -325,8 +298,8 @@ body {
   color: #000000;
   border-radius: var(--border-radious);
   filter: 16px 14px 10px;
-
-  font-size: 25px;
+  padding: 2px 10px;
+  font-size: 18px;
   white-space: nowrap;
   opacity: 1;
   visibility: visible;
@@ -358,32 +331,33 @@ body {
   
 
 
-  @media (width < 700px) {
+  @media (width < 650px) {
     main {
-      grid-template-rows: .5fr 1fr 1fr 1fr 1fr;
+      /* grid-template-rows: .2fr 1fr; */
       grid-template-columns: 1fr;
       gap: 20px;
       grid-template-areas: 
                           'nav__shortcuts'
-                          'section__cpu'
-                          'section__monitor' 
-                          'section__teclado'
-                          'section__impresora';
+                          'nav__section';
     }
 
     .nav__shortcuts {
-      /* position: sticky; */
-      /* top: 0; */
-      /* z-index: 1000; */
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
       grid-template-areas: 'shortcuts__agregar shortcuts__b shortcuts__c shortcuts__d';
     }
 
-    section {
-      grid-template-rows: 1fr ;
-      grid-template-columns: .5fr 1fr;
+    .nav__section {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4,1fr);
+      grid-template-areas:  'section__cpu'
+                            'section__monitor'
+                            'section__teclado'
+                            'section__impresora';
+
     }
+
+    
 
   }
 
@@ -397,8 +371,7 @@ body {
 
   .container {
     display: grid;
-    grid-template-areas: "box1"
-                         "box2";
+    grid-template-areas: "box1""box2";
   }
   
   .box {
