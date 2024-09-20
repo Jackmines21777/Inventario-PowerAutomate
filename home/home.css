@@ -334,7 +334,11 @@ main {
   
 
 
-  @media (width < 650px) {
+  @media (width < 700px) {
+
+    .content {
+      padding: 0 20px;
+    }
     main {
       /* grid-template-rows: .2fr 1fr; */
       grid-template-columns: 1fr;
