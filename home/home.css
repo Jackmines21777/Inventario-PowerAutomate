@@ -41,6 +41,9 @@
 body {
   /* background: #181818; */
   background: var(--background);
+  display: flex;
+  justify-content: center;
+
   /* height: 100dvh; */
 
 }  
@@ -337,7 +340,7 @@ main {
   @media (width < 700px) {
 
     .content {
-      padding: 0 20px;
+      margin: 0 50px;
     }
     main {
       /* grid-template-rows: .2fr 1fr; */
