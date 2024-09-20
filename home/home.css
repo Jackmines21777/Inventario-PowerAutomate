@@ -17,6 +17,7 @@
   --negro__dark: #181818;
   --blanco__dark: #ebffff;
   --blanco-rojo: #ebffff;
+  --blanco__neto: #ebffff;
   --margin__section: 0 53px;
   /* --border-radious-section: 10%; */
 }
@@ -28,7 +29,7 @@
   --negro: #181818;
   --blanco: #181818;
 
-  --blanco__neto: #ebffff;
+  --blanco__neto: #181818;
 
 
   --shadow: #ebffff;
@@ -68,10 +69,11 @@ main {
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4,1fr);
+  grid-template-rows: repeat(5,1fr);
   grid-template-areas: 'shortcuts__agregar'
                         'shortcuts__b'
                         'shortcuts__c' 
+                        'shortcuts__e' 
                         'shortcuts__d';
   gap: 20px;
 
@@ -277,10 +279,11 @@ main {
 .section__impresora{ grid-area: section__impresora;}
 .section__title { grid-area: section__title;}
 .section__options { grid-area: section__options; }
-.options_a { grid-area: options_a;}
-.options_b { grid-area: options_b;}
-.options_c { grid-area: options_c;}
-.options_d { grid-area: options_d;}
+.shortcuts__a { grid-area: shortcuts__a}
+.shortcuts__b { grid-area: shortcuts__b}
+.shortcuts__c { grid-area: shortcuts__c}
+.shortcuts__d { grid-area: shortcuts__d}
+.shortcuts__e { grid-area: shortcuts__e}
 
 
 
@@ -342,9 +345,9 @@ main {
     }
 
     .nav__shortcuts {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 1fr;
-      grid-template-areas: 'shortcuts__agregar shortcuts__b shortcuts__c shortcuts__d';
+      grid-template-areas: 'shortcuts__agregar shortcuts__b shortcuts__c shortcuts__e shortcuts__d';
     }
 
     .nav__section {
